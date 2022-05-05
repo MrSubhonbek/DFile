@@ -19,7 +19,7 @@ export const Home = (props: IProps) => {
     return (
         <div className={s.home}>
             <NestedList lists={listsFolder} />
-            <Folder />
+            <Folder lists={listsFolder}/>
             <NavbarIcon />
         </div>
     )

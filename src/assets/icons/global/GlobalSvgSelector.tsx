@@ -56,7 +56,36 @@ export const GlobalSvgSelector = ({ id }: IProps) => {
         <path d="M9.90008 8.26662L6.90009 4.66666" stroke="#6965E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         ;
-        default:
+        case 'smallFolderIcon':
+            return <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="3" height="2" rx="1" fill="#C4C4C4"/>
+            <rect y="5" width="3" height="2" rx="1" fill="#C4C4C4"/>
+            <rect y="10" width="3" height="2" rx="1" fill="#C4C4C4"/>
+            <rect x="5" width="9" height="2" rx="1" fill="#C4C4C4"/>
+            <rect x="5" y="5" width="9" height="2" rx="1" fill="#C4C4C4"/>
+            <rect x="5" y="10" width="9" height="2" rx="1" fill="#C4C4C4"/>
+            </svg>
+            ;
+        case 'bigFolderIcon':
+            return <svg width="14" onClick={()=>{}} height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="6" height="6" rx="2" fill="#6965E1"/>
+            <rect x="8" width="6" height="6" rx="2" fill="#6965E1"/>
+            <rect y="8" width="6" height="6" rx="2" fill="#6965E1"/>
+            <rect x="8" y="8" width="6" height="6" rx="2" fill="#6965E1"/>
+            </svg>
+            ;
+        case 'folder': 
+        return <svg width="112" height="88" viewBox="0 0 112 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 84.0143V3.99454C0 1.7854 1.79086 0 4 0H36.6504C38.4265 0 40.1362 0.67513 41.4331 1.88861L51.445 11.2566C52.7419 12.4701 54.4515 13.1452 56.2276 13.1452H108C110.209 13.1452 112 14.9361 112 17.1452V84C112 86.2091 110.209 88 108 88H4C1.79086 88 0 86.2234 0 84.0143Z" fill="url(#paint0_linear_1_171)" fill-opacity="0.5"/>
+        <defs>
+        <linearGradient id="paint0_linear_1_171" x1="56" y1="0" x2="56" y2="88" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#8D89FF"/>
+        <stop offset="1" stop-color="#0800FF"/>
+        </linearGradient>
+        </defs>
+        </svg>
+        ; 
+            default:
             return null
     }
 }
