@@ -37,7 +37,7 @@ export function NestedList(props:IProps) {
         >
             <ListItemButton  onClick={handleClick}>
                 {open ? <ExpandLess sx={{ color: '#6965E1' }} /> : <ExpandMore sx={{ color: '#6965E1' }} />}
-                <ListItemText sx={{ color: '#6965E1',font:"'Montserrat'", fontFamily: "'Montserrat', sans-serif" }} primary="DFILE STORAGE" />
+                <ListItemText sx={{ color: '#6965E1'}} primary="DFILE STORAGE" />
             </ListItemButton>
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
