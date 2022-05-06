@@ -7,7 +7,7 @@ interface IProps {
 
 export const NavbarIcon = (props: IProps) => {
     return (
-        <div>NaNavbarIconvbar</div>
+        <div className ={s.navbarIcon}></div>
     )
 }
 

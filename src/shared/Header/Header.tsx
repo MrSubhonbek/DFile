@@ -15,7 +15,7 @@ export const Header = (props: IProps) => {
             </div>
             <div className={s.logo}></div>
             <div className={s.wrapper}>
-                <div className={s.search}><input type="text" placeholder="Disk search"/><GlobalSvgSelector id='found' /></div>
+                <div className={s.search}>Disk search<GlobalSvgSelector id='found' /></div>
                 <div className={s.slide}><GlobalSvgSelector id='slide' /></div>
                 <div className={s.profile}><GlobalSvgSelector id='profile' /></div>
             </div>

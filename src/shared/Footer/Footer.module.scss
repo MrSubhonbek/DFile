@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: auto;
+    border-top: solid 0.5px #6965E1;
+}
+.recently{
+    color: #6965E1;
+}
+.footer > div {
+    margin: 15px;
+}
